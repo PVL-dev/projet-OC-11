@@ -1,0 +1,17 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  margin: 0;
+}
+
+code {
+  font-family: "Montserrat", sans-serif;
+}
+
+#root {
+  margin-right: 100px;
+  margin-left: 100px;
+}
+

@@ -1,0 +1,25 @@
+.header {
+	margin-top: 40px;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.header__logo {
+	height: 68px;
+}
+
+.header__navLink > a {
+	font-size: 24px;
+	color: #FF6060;
+	text-decoration: none;
+
+	margin-left: 30px;
+	margin-right: 5px;
+}
+
+.header__navLink > a:hover {
+	text-decoration: underline;
+}
+
