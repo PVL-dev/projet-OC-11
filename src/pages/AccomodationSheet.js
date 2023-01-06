@@ -2,15 +2,15 @@ import React from 'react';
 import Header from '../components/Header';
 import Footer from '../components/Footer.js';
 
-const About = () => {
+const AccomodationSheet = () => {
     return (
         <div>
             <Header />
-            <h1>À propos</h1>
+            <h1>Logement</h1>
             <Footer />
         </div>
     );
 };
 
-export default About;
+export default AccomodationSheet;
 

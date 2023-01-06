@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800);
+
+$font-1: "Montserrat", sans-serif;
+
+$color-red: #FF6060;
+$color-white: #FFFFFF;
+$color-black: #000000;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $color-white;
+  font-family: $font-1;
+  // @include verticalCenter;
+}
+li {
+  list-style-type: none;
+}
+

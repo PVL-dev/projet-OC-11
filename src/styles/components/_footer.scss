@@ -1,0 +1,26 @@
+.footer {
+	margin-top: 80px;
+    height: 210px;
+
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+
+    .logoKasa {
+        height: 40px;
+
+        path {
+            fill: $color-white;
+        }
+    }
+
+    p {
+        margin-top: 40px;
+
+        color: $color-white;
+    }
+}
+

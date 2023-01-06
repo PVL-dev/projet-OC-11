@@ -1,17 +1,24 @@
-import '../styles/Header.css'
-import logo from '../assets/images/logo.svg'
+import { NavLink } from 'react-router-dom'
+import { ReactComponent as Logo } from '../assets/images/logo.svg'
 
-function Header() {
-    
+const Header = () => {
     return (
         <div className="header">
-            <img className="header__logo" src={logo} alt=""></img>
+            <Logo />
+
             <div className="header__navLink">
-                <a href="#">Accueil</a>
-                <a href="#">À Propos</a>
+                <ul>
+                    <NavLink to="/">
+                        <li>Accueil</li>
+                    </NavLink>
+                    <NavLink to="/about">
+                        <li>À propos</li>
+                    </NavLink>
+                </ul>
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default Header
+
