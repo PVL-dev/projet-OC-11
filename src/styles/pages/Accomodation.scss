@@ -1,0 +1,98 @@
+.accomodation {
+    margin-right: 100px;
+    margin-left: 100px;
+
+    font-weight: 500;
+    color: $color-red;
+
+    &__header {
+        margin-top: 30px;
+
+        display: flex;
+        justify-content: space-between;
+
+        h1 {
+            height: 51px;
+
+            font-size: 36px;
+        }
+
+        p {
+            height: 26px;
+
+            font-size: 18px;
+            font-weight: 400;
+        }
+
+        .tags {
+            margin-top: 20px;
+            display: flex;
+
+            &__item {
+                width: auto;
+                min-width: 115px;
+                height: 25px;
+                margin-right: 10px;
+                padding-left: 8px;
+                padding-right: 8px;
+
+                border-radius: 10px;
+
+                background-color: $color-red;
+                font-size: 14px;
+                font-weight: 300;
+                cursor: pointer;
+
+                color: $color-white;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+
+        &__host {
+            &__details {
+                display: flex;
+                align-items: center;
+                
+                p {
+                    margin-right: 10px;
+
+                    font-size: 18px;
+                    font-weight: 400;
+                }
+
+                img {
+                    height: 64px;
+                    width: 64px;
+
+                    border-radius: 32px;
+                }
+            }
+
+            &__rating {
+                margin-top: 24px;
+
+                display: flex;
+                flex-direction: row-reverse;
+
+                .rating-container {
+                    .grayStar {
+                        path {
+                            fill: #E3E3E3;
+                        }
+                    }                    
+                }
+            }
+        }
+    }
+
+    &__dropdown {
+       margin-top: 26px; 
+
+       display: flex;
+       justify-content: space-between;
+    }
+}
+

@@ -5,6 +5,10 @@ $font-1: "Montserrat", sans-serif;
 $color-red: #FF6060;
 $color-white: #FFFFFF;
 $color-black: #000000;
+$color-grey: #F7F7F7;
+
+$homeBanner-background: "../../assets/images/home-background.png";
+$aboutBanner-background: "../../assets/images/about-background.png";
 
 * {
   padding: 0;
@@ -15,8 +19,10 @@ $color-black: #000000;
 body {
   background: $color-white;
   font-family: $font-1;
-  // @include verticalCenter;
+  
+  min-width: 1440px;
 }
+
 li {
   list-style-type: none;
 }

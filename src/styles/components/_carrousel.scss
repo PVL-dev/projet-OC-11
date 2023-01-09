@@ -1,0 +1,19 @@
+.carrousel__container {
+    margin-top: 20px;
+
+    height: 415px;
+    width: 1240px;
+
+    overflow: hidden;
+
+    border-radius: 25px;
+
+    display: flex;
+
+    .carrousel__item {
+        width: 100%;
+
+        object-fit: cover;
+    }
+}
+

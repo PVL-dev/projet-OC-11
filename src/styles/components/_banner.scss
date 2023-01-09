@@ -1,0 +1,32 @@
+.banner {
+    height: 225px;
+    margin-top: 63px;
+    margin-left: 100px;
+    margin-right: 100px;
+    
+    background-position: center;
+    background-size: cover;
+    background-color: rgb(160, 160, 160);
+    background-blend-mode: multiply;
+    
+    border-radius: 25px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 48px;
+        font-weight: 500;
+        color: $color-white;
+    }
+}
+
+#homeBanner {
+    background-image: url($homeBanner-background);
+}
+
+#aboutBanner {
+    background-image: url($aboutBanner-background);
+}
+

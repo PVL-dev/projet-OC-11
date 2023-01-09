@@ -1,0 +1,24 @@
+.gallery {
+    margin-top: 43px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding-top: 56px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 56px;
+
+    background-color: $color-grey;
+
+    border-radius: 25px;
+
+    display: grid;
+    grid-template-columns: repeat(3, 340px);
+    column-gap: 60px;
+    row-gap: 50px;
+    justify-content: space-between;
+
+    /*display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;*/
+}
+
