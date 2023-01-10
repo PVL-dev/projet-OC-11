@@ -1,8 +1,10 @@
-.accomodation {
+.accomodationPage {
     margin-right: 100px;
     margin-left: 100px;
 
-    font-weight: 500;
+    width: calc(100% - 200px);
+    max-width: 1400px;
+
     color: $color-red;
 
     &__header {
@@ -55,9 +57,11 @@
             &__details {
                 display: flex;
                 align-items: center;
+                justify-content: flex-end;
                 
                 p {
                     margin-right: 10px;
+                    width: min-content;
 
                     font-size: 18px;
                     font-weight: 400;

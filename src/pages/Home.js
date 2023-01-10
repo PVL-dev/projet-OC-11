@@ -12,13 +12,15 @@ const Home = () => {
     });
 
     return (
-        <div>
+        <div className="mainContainer">
             <Header />
+            <div className="homePage">
 
             <Banner key={banner[0].id} banner={banner[0]} />
             
             <Gallery />
 
+            </div>
             <Footer />
         </div>
     );
