@@ -11,8 +11,8 @@ const App = () => {
       <Route path='/' element={<Home />} />
       <Route path='/about' element={<About />} />
       <Route path='/logement/:id' element={<Accomodation />} />
-      {/*La route path='*' est suivie pour toute url inconnue. */}
       <Route path='*' element={<Page404 />} />
+      <Route path='/logement/*' element={<Page404 />} />
     </Routes>
   </BrowserRouter>
   );

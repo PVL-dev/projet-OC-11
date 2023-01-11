@@ -6,6 +6,10 @@
 	{
 		"id": "aboutBanner",
 		"h2content": ""
+	},
+	{
+		"id": "aboutMobileBanner",
+		"h2content": ""
 	}
 ]
 

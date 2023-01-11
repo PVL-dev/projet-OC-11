@@ -7,8 +7,13 @@ import Dropdown from '../components/Dropdown';
 import Footer from '../components/Footer.js';
 
 const About = () => {
+    const windowSize = window.innerWidth;
     const banner = banners.filter((banner) => {
-        return banner.id.includes("aboutBanner");
+        if (windowSize > 768) {
+            return banner.id.includes("aboutBanner");
+        } else {
+            return banner.id.includes("aboutMobileBanner");
+        }
     });
 
     return (

@@ -13,7 +13,31 @@
         align-items: center;
 
         .dropdown__container:not(:last-child) {
-            margin-bottom: 31px;
+            margin-bottom: 30px;
+        }
+    }
+
+    @media #{$mobile} {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        width: calc(100% - 40px);
+        max-width: auto;
+
+        .banner {
+            height: 223px;
+        }
+
+        &__dropdown {
+            margin-top: 19px;
+
+            .dropdown__container:not(:last-child) {
+                margin-bottom: 20px;
+            }
+        }
+
+        ~ .footer {
+            margin-top: calc((1vh * 100) - 718px);
         }
     }
 }

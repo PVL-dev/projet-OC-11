@@ -47,5 +47,28 @@
             object-fit: cover;
         }
     }
+
+    @media #{$mobile} {
+        margin-top: 27px;
+
+        height: 255px;
+
+        border-radius: 10px;
+
+        .leftArrow, .rightArrow {
+            width: 20px;
+            height: 12px;
+            margin: 6px;
+        }
+
+        .carrousel__item {
+            position: absolute;
+
+            height: 255px;
+            min-width: auto;
+
+            border-radius: 10px;
+        }
+    }
 }
 

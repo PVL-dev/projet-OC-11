@@ -9,6 +9,9 @@ $color-grey: #F7F7F7;
 
 $homeBanner-background: "../../assets/images/home-background.png";
 $aboutBanner-background: "../../assets/images/about-background.png";
+$aboutMobileBanner-background: "../../assets/images/about-mobile-background.png";
+
+$mobile: "only screen and (max-width: 768px)";
 
 * {
   padding: 0;
@@ -21,6 +24,10 @@ body {
   font-family: $font-1;
   
   min-width: 1440px;
+
+  @media #{$mobile} {
+    min-width: auto;
+  }
 }
 
 li {

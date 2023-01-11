@@ -18,6 +18,23 @@
         font-weight: 500;
         color: $color-white;
     }
+
+    @media #{$mobile} {
+        height: 111px;
+        margin-top: 15px;
+        
+        border-radius: 10px;
+
+        justify-content: flex-start;
+
+        h2 {
+            width: 220px;
+            margin-left: 16px;
+
+            font-size: 24px;
+            font-weight: 400;
+        }
+    }
 }
 
 #homeBanner {
@@ -26,5 +43,9 @@
 
 #aboutBanner {
     background-image: url($aboutBanner-background);
+}
+
+#aboutMobileBanner {
+    background-image: url($aboutMobileBanner-background);
 }
 
