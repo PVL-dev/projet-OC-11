@@ -37,7 +37,12 @@
         }
 
         ~ .footer {
-            margin-top: calc((1vh * 100) - 718px);
+            @media only screen and (max-height: 778px) {
+                margin-top: 60px;
+            }
+            @media only screen and (min-height: 778px) {
+                transform: translateY(calc(((1vh * 100) - 508px) - 270px));
+            }
         }
     }
 }
