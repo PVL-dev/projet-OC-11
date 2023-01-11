@@ -39,12 +39,22 @@
         border-radius: 25px;
 
         display: flex;
+        justify-content: center;
 
         img {
             position: relative;
             width: 100%;
 
             object-fit: cover;
+        }
+
+        .counter {
+            position: absolute;
+            bottom: 25px;
+
+            font-size: 18px;
+            font-weight: 400;
+            color: $color-white;
         }
     }
 
@@ -68,6 +78,10 @@
             min-width: auto;
 
             border-radius: 10px;
+
+            .counter {
+                display: none;
+            }
         }
     }
 }

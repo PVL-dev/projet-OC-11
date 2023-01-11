@@ -19,13 +19,20 @@ const Carrousel = ({pictures}) => {
 
     return (
         <div className="carrousel__container">
-            <Arrow className="leftArrow" onClick={prevPicture}/>
-            <Arrow className="rightArrow" onClick={nextPicture}/>
+            {length !== 1 && (
+                <Arrow className="leftArrow" onClick={prevPicture}/>
+            )}
+            {length !== 1 && (
+                <Arrow className="rightArrow" onClick={nextPicture}/>
+            )}
             {pictures.map((picture, index) => {
                 return (
                     <div className={index === current ? "carrousel__item active" : "carrousel__item"} key={index}>
                         {index === current && (
                             <img src={picture} alt=""/>
+                        )}
+                        {index === current && (
+                        <div className="counter">{index+1}/{length} </div>
                         )}
                     </div>
                 );
